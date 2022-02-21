@@ -60,7 +60,7 @@ const ChatRoom = (props) => {
                 <li><label>Current Users (2)</label></li>
                   <li className="uk-active" onClick={alice}>
                     <div className="avatar-container">
-                        <img src={"Alice.jpg"} className="avatar uk-margin-medium-right"/>
+                        <img src={"Alice.jpg"} className="avatar uk-margin-medium-right" alt={`Alice`} title={`Alice`}></img>
                         <span className="onlineIcon"></span>
                         <span className="offlineIcon"></span>
                     </div>
@@ -69,7 +69,7 @@ const ChatRoom = (props) => {
                     </li>
                   <li className="uk-active" onClick={bob}>
                   <div className="avatar-container">
-                    <img src={"Bob.jpg"} className="avatar uk-margin-medium-right"/>
+                    <img src={"Bob.jpg"} className="avatar uk-margin-medium-right" alt={`Bob`} title={`Bob`}></img>
                     <span className="onlineIcon"></span>
                     <span className="offlineIcon"></span>
                     </div>

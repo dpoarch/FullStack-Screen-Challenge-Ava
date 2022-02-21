@@ -4,7 +4,6 @@ import UserAvatar from "../UserAvatar/UserAvatar";
 import "./ChatMessage.css";
 
 const ChatMessage = ({ message }) => {
-  {console.log(message)}
   var currentUser = JSON.parse(localStorage.getItem('selectedUser'));
   if(currentUser == null){
     const user = {name: 'Bob', avatar: 'Bob.jpg'};
