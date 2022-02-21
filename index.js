@@ -56,8 +56,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+server.listen(process.env.PORT || PORT, () => {
+  console.log(`Listening on port ${process.env.PORT}`);
 });
 
 app.get("/rooms/:roomId/users", (req, res) => {
@@ -111,4 +111,6 @@ app.get("/info", (req, res) => {
 };
   return res.json({ messages });
 });
+
+// app.listen( || 4000);
 
