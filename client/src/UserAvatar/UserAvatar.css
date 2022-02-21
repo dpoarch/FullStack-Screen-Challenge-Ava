@@ -1,0 +1,12 @@
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+
+  height: 30px;
+  width: 30px;
+}
+
+.room-name{
+    font-weight: bold;
+    color: #3a04bd82;
+}
