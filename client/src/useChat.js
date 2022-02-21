@@ -18,8 +18,6 @@ const useChat = (roomId) => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await axios.get("https://api.randomuser.me/");
-      const result = response.data.results[0];
       var currentUser = JSON.parse(localStorage.getItem('selectedUser'));
 
       if(currentUser == null){
