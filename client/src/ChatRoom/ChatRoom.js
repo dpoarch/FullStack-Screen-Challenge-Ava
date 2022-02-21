@@ -46,8 +46,12 @@ const ChatRoom = (props) => {
   };
 
   useEffect(() => {
-    if (isTyping) startTypingMessage();
-    else stopTypingMessage();
+    if (isTyping){
+      startTypingMessage();
+    }else{
+      stopTypingMessage();
+    } 
+   // eslint-disable-next-line
   }, [isTyping]);
 
   return (
